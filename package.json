@@ -13,9 +13,6 @@
     "format": "prettier --write",
     "lint": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
   },
-  "lint-staged": {
-    "*": "eslint --fix --diff-filter"
-  },
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
