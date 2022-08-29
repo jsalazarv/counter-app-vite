@@ -1,1 +1,3 @@
-test('Test demo', () => {});
+describe('Demo', () => {
+  test('test', () => {});
+});
