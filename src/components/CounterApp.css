@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.wrapper {
+    @apply text-center;
+}
+
+.counter-container {
+    @apply flex;
+    @apply items-center;
+}
+
+.counter-button {
+    @apply bg-gray-dark;
+    @apply h-10;
+    @apply m-3;
+    @apply rounded-full;
+    @apply text-base;
+    @apply text-orange-dark;
+    @apply w-10;
+    @apply text-xl;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.counter-button:hover {
+    @apply bg-gray-dark;
+    @apply text-orange-light;
+}
+
 .counter {
     @apply bg-orange-dark;
     @apply h-20;
