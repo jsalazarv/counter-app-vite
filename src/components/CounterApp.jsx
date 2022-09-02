@@ -3,13 +3,24 @@ import propTypes from 'prop-types';
 
 export const CounterApp = ({ value }) => {
   const [counter, setCounter] = useState(value);
+  const [animation, setAnimation] = useState('');
+
+  const resetAnimation = () => {
+    setTimeout(() => {
+      setAnimation('');
+    }, 500);
+  };
 
   const handleAdd = () => {
     setCounter(counter + 1);
+    setAnimation('flip-up');
+    resetAnimation();
   };
 
   const handleSubtract = () => {
     setCounter(counter - 1);
+    setAnimation('flip-down');
+    resetAnimation();
   };
 
   const handleReset = () => {
@@ -26,7 +37,11 @@ export const CounterApp = ({ value }) => {
             onClick={handleSubtract}>
             -
           </button>
-          <div>{counter}</div>
+          <div className="flipper-container">
+            <div className={`counter ${animation}`}>
+              <span>{counter}</span>
+            </div>
+          </div>
           <button
             aria-label="add"
             className="counter-button add"

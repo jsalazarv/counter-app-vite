@@ -1,6 +1,8 @@
+@import "components/CounterApp.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 body {
     @apply bg-gray-dark;;
