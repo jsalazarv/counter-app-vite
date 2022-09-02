@@ -7,7 +7,7 @@ import {
   faArrowRotateRight,
 } from '@fortawesome/free-solid-svg-icons';
 
-export const CounterApp = ({ value }) => {
+export const Counter = ({ value }) => {
   const [counter, setCounter] = useState(value);
   const [animation, setAnimation] = useState('');
 
@@ -66,10 +66,10 @@ export const CounterApp = ({ value }) => {
   );
 };
 
-CounterApp.propTypes = {
+Counter.propTypes = {
   value: propTypes.number.isRequired,
 };
 
-CounterApp.defaultProps = {
+Counter.defaultProps = {
   value: null,
 };
