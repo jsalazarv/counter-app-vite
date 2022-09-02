@@ -1,5 +1,13 @@
+import { Counter } from './components/Counter/Counter.jsx';
+import { Footer } from './components/Footer/Footer';
+
 function App() {
-  return <h1>App React</h1>;
+  return (
+    <div className="app-container">
+      <Counter value={0} />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
