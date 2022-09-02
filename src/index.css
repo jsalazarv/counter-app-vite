@@ -1,0 +1,15 @@
+@import "components/CounterApp.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply bg-gray-dark;;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply text-white;
+    height: 100vh;
+}

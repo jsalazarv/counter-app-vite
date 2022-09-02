@@ -14,8 +14,16 @@ exports[`[Snapshots] Should match snapshot 1`] = `
       >
         -
       </button>
-      <div>
-        0
+      <div
+        class="flipper-container"
+      >
+        <div
+          class="counter "
+        >
+          <span>
+            0
+          </span>
+        </div>
       </div>
       <button
         aria-label="add"
